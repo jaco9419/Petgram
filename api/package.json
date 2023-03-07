@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "vercel-build": "npm run build",
+    "build": "webpack",
     "deploy": "now -t <tu-token>",
     "start:api": "NODE_ENV=production node index.js",
     "dev:api": "nodemon index.js --ignore db.json",
